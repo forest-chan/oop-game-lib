@@ -1,0 +1,4 @@
+/home/forest-chan/clion-2021.1.1/bin/cmake/linux/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" /home/forest-chan/CLionProjects/oop_game
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/forest-chan/CLionProjects/oop_game/cmake-build-debug

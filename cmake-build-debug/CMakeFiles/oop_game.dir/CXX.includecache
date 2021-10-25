@@ -1,0 +1,28 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/forest-chan/CLionProjects/oop_game/Entities/Entity.h
+memory
+/home/forest-chan/CLionProjects/oop_game/Entities/memory
+
+/home/forest-chan/CLionProjects/oop_game/Field/Cells/BaseCell.h
+../../Entities/Entity.h
+/home/forest-chan/CLionProjects/oop_game/Entities/Entity.h
+
+/home/forest-chan/CLionProjects/oop_game/Field/Field.cpp
+Field.h
+/home/forest-chan/CLionProjects/oop_game/Field/Field.h
+
+/home/forest-chan/CLionProjects/oop_game/Field/Field.h
+iostream
+-
+utility
+-
+Cells/BaseCell.h
+/home/forest-chan/CLionProjects/oop_game/Field/Cells/BaseCell.h
+
