@@ -82,7 +82,28 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="/home/forest-chan/CLionProjects/oop_game/Entities/Creatures/Creature.h">
+			<Option target="oop_game"/>
+		</Unit>
+		<Unit filename="/home/forest-chan/CLionProjects/oop_game/Entities/Creatures/Enemies/Enemy.h">
+			<Option target="oop_game"/>
+		</Unit>
+		<Unit filename="/home/forest-chan/CLionProjects/oop_game/Entities/Creatures/Enemies/EnemyFactory.h">
+			<Option target="oop_game"/>
+		</Unit>
+		<Unit filename="/home/forest-chan/CLionProjects/oop_game/Entities/Creatures/Player.h">
+			<Option target="oop_game"/>
+		</Unit>
+		<Unit filename="/home/forest-chan/CLionProjects/oop_game/Entities/Entities_Declarations.h">
+			<Option target="oop_game"/>
+		</Unit>
 		<Unit filename="/home/forest-chan/CLionProjects/oop_game/Entities/Entity.h">
+			<Option target="oop_game"/>
+		</Unit>
+		<Unit filename="/home/forest-chan/CLionProjects/oop_game/Entities/Items/Item.h">
+			<Option target="oop_game"/>
+		</Unit>
+		<Unit filename="/home/forest-chan/CLionProjects/oop_game/Entities/Items/ItemFactory.h">
 			<Option target="oop_game"/>
 		</Unit>
 		<Unit filename="/home/forest-chan/CLionProjects/oop_game/Field/Cells/BaseCell.h">
@@ -112,22 +133,49 @@
 		<Unit filename="/home/forest-chan/CLionProjects/oop_game/Field/FieldBuilder.h">
 			<Option target="oop_game"/>
 		</Unit>
-		<Unit filename="/home/forest-chan/CLionProjects/oop_game/Viewers/CellView.cpp">
-			<Option target="oop_game"/>
-		</Unit>
-		<Unit filename="/home/forest-chan/CLionProjects/oop_game/Viewers/CellView.h">
-			<Option target="oop_game"/>
-		</Unit>
-		<Unit filename="/home/forest-chan/CLionProjects/oop_game/Viewers/ConsoleFieldView.cpp">
-			<Option target="oop_game"/>
-		</Unit>
-		<Unit filename="/home/forest-chan/CLionProjects/oop_game/Viewers/ConsoleFieldView.h">
-			<Option target="oop_game"/>
-		</Unit>
 		<Unit filename="/home/forest-chan/CLionProjects/oop_game/Viewers/FieldView.h">
 			<Option target="oop_game"/>
 		</Unit>
-		<Unit filename="/home/forest-chan/CLionProjects/oop_game/main.cpp">
+		<Unit filename="/home/forest-chan/CLionProjects/oop_game/Viewers/Viewers_Declarations.h">
+			<Option target="oop_game"/>
+		</Unit>
+		<Unit filename="/home/forest-chan/CLionProjects/oop_game/Viewers/console/CellView.cpp">
+			<Option target="oop_game"/>
+		</Unit>
+		<Unit filename="/home/forest-chan/CLionProjects/oop_game/Viewers/console/CellView.h">
+			<Option target="oop_game"/>
+		</Unit>
+		<Unit filename="/home/forest-chan/CLionProjects/oop_game/Viewers/console/ConsoleFieldView.cpp">
+			<Option target="oop_game"/>
+		</Unit>
+		<Unit filename="/home/forest-chan/CLionProjects/oop_game/Viewers/console/ConsoleFieldView.h">
+			<Option target="oop_game"/>
+		</Unit>
+		<Unit filename="/home/forest-chan/CLionProjects/oop_game/Viewers/console/ConsoleObjectView.h">
+			<Option target="oop_game"/>
+		</Unit>
+		<Unit filename="/home/forest-chan/CLionProjects/oop_game/Viewers/console/EntityView.cpp">
+			<Option target="oop_game"/>
+		</Unit>
+		<Unit filename="/home/forest-chan/CLionProjects/oop_game/Viewers/console/EntityView.h">
+			<Option target="oop_game"/>
+		</Unit>
+		<Unit filename="/home/forest-chan/CLionProjects/oop_game/logging/BasePublisher.h">
+			<Option target="oop_game"/>
+		</Unit>
+		<Unit filename="/home/forest-chan/CLionProjects/oop_game/logging/Log.h">
+			<Option target="oop_game"/>
+		</Unit>
+		<Unit filename="/home/forest-chan/CLionProjects/oop_game/logging/loggers/BaseLogger.h">
+			<Option target="oop_game"/>
+		</Unit>
+		<Unit filename="/home/forest-chan/CLionProjects/oop_game/logging/loggers/ConsoleLogger.h">
+			<Option target="oop_game"/>
+		</Unit>
+		<Unit filename="/home/forest-chan/CLionProjects/oop_game/logging/loggers/FileLogger.h">
+			<Option target="oop_game"/>
+		</Unit>
+		<Unit filename="/home/forest-chan/CLionProjects/oop_game/tests/lab2Tests.cpp">
 			<Option target="oop_game"/>
 		</Unit>
 		<Unit filename="/home/forest-chan/CLionProjects/oop_game/CMakeLists.txt">

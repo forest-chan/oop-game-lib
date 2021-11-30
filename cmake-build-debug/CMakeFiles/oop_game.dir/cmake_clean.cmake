@@ -1,9 +1,10 @@
 file(REMOVE_RECURSE
   "CMakeFiles/oop_game.dir/Field/Field.cpp.o"
   "CMakeFiles/oop_game.dir/Field/FieldBuilder.cpp.o"
-  "CMakeFiles/oop_game.dir/Viewers/CellView.cpp.o"
-  "CMakeFiles/oop_game.dir/Viewers/ConsoleFieldView.cpp.o"
-  "CMakeFiles/oop_game.dir/main.cpp.o"
+  "CMakeFiles/oop_game.dir/Viewers/console/CellView.cpp.o"
+  "CMakeFiles/oop_game.dir/Viewers/console/ConsoleFieldView.cpp.o"
+  "CMakeFiles/oop_game.dir/Viewers/console/EntityView.cpp.o"
+  "CMakeFiles/oop_game.dir/tests/lab2Tests.cpp.o"
   "oop_game"
   "oop_game.pdb"
 )

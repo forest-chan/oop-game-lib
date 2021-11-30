@@ -1,0 +1,10 @@
+an entity was moved to an empty cell
+an entity was moved to an empty cell
+an entity was moved to an empty cell
+creature interacted with creature
+creature interacted with creature
+creature on cell was destroyed
+the object located on the cell from which the move was made has been moved to a new cell
+creature interacted with item
+an item on cell was used
+the object located on the cell from which the move was made has been moved to a new cell

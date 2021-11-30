@@ -102,64 +102,79 @@ CMakeFiles/oop_game.dir/Field/FieldBuilder.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/oop_game.dir/Field/FieldBuilder.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/forest-chan/CLionProjects/oop_game/Field/FieldBuilder.cpp -o CMakeFiles/oop_game.dir/Field/FieldBuilder.cpp.s
 
-CMakeFiles/oop_game.dir/main.cpp.o: CMakeFiles/oop_game.dir/flags.make
-CMakeFiles/oop_game.dir/main.cpp.o: ../main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/forest-chan/CLionProjects/oop_game/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/oop_game.dir/main.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/oop_game.dir/main.cpp.o -c /home/forest-chan/CLionProjects/oop_game/main.cpp
+CMakeFiles/oop_game.dir/tests/lab2Tests.cpp.o: CMakeFiles/oop_game.dir/flags.make
+CMakeFiles/oop_game.dir/tests/lab2Tests.cpp.o: ../tests/lab2Tests.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/forest-chan/CLionProjects/oop_game/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/oop_game.dir/tests/lab2Tests.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/oop_game.dir/tests/lab2Tests.cpp.o -c /home/forest-chan/CLionProjects/oop_game/tests/lab2Tests.cpp
 
-CMakeFiles/oop_game.dir/main.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/oop_game.dir/main.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/forest-chan/CLionProjects/oop_game/main.cpp > CMakeFiles/oop_game.dir/main.cpp.i
+CMakeFiles/oop_game.dir/tests/lab2Tests.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/oop_game.dir/tests/lab2Tests.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/forest-chan/CLionProjects/oop_game/tests/lab2Tests.cpp > CMakeFiles/oop_game.dir/tests/lab2Tests.cpp.i
 
-CMakeFiles/oop_game.dir/main.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/oop_game.dir/main.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/forest-chan/CLionProjects/oop_game/main.cpp -o CMakeFiles/oop_game.dir/main.cpp.s
+CMakeFiles/oop_game.dir/tests/lab2Tests.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/oop_game.dir/tests/lab2Tests.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/forest-chan/CLionProjects/oop_game/tests/lab2Tests.cpp -o CMakeFiles/oop_game.dir/tests/lab2Tests.cpp.s
 
-CMakeFiles/oop_game.dir/Viewers/CellView.cpp.o: CMakeFiles/oop_game.dir/flags.make
-CMakeFiles/oop_game.dir/Viewers/CellView.cpp.o: ../Viewers/CellView.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/forest-chan/CLionProjects/oop_game/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/oop_game.dir/Viewers/CellView.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/oop_game.dir/Viewers/CellView.cpp.o -c /home/forest-chan/CLionProjects/oop_game/Viewers/CellView.cpp
+CMakeFiles/oop_game.dir/Viewers/console/CellView.cpp.o: CMakeFiles/oop_game.dir/flags.make
+CMakeFiles/oop_game.dir/Viewers/console/CellView.cpp.o: ../Viewers/console/CellView.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/forest-chan/CLionProjects/oop_game/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/oop_game.dir/Viewers/console/CellView.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/oop_game.dir/Viewers/console/CellView.cpp.o -c /home/forest-chan/CLionProjects/oop_game/Viewers/console/CellView.cpp
 
-CMakeFiles/oop_game.dir/Viewers/CellView.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/oop_game.dir/Viewers/CellView.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/forest-chan/CLionProjects/oop_game/Viewers/CellView.cpp > CMakeFiles/oop_game.dir/Viewers/CellView.cpp.i
+CMakeFiles/oop_game.dir/Viewers/console/CellView.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/oop_game.dir/Viewers/console/CellView.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/forest-chan/CLionProjects/oop_game/Viewers/console/CellView.cpp > CMakeFiles/oop_game.dir/Viewers/console/CellView.cpp.i
 
-CMakeFiles/oop_game.dir/Viewers/CellView.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/oop_game.dir/Viewers/CellView.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/forest-chan/CLionProjects/oop_game/Viewers/CellView.cpp -o CMakeFiles/oop_game.dir/Viewers/CellView.cpp.s
+CMakeFiles/oop_game.dir/Viewers/console/CellView.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/oop_game.dir/Viewers/console/CellView.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/forest-chan/CLionProjects/oop_game/Viewers/console/CellView.cpp -o CMakeFiles/oop_game.dir/Viewers/console/CellView.cpp.s
 
-CMakeFiles/oop_game.dir/Viewers/ConsoleFieldView.cpp.o: CMakeFiles/oop_game.dir/flags.make
-CMakeFiles/oop_game.dir/Viewers/ConsoleFieldView.cpp.o: ../Viewers/ConsoleFieldView.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/forest-chan/CLionProjects/oop_game/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/oop_game.dir/Viewers/ConsoleFieldView.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/oop_game.dir/Viewers/ConsoleFieldView.cpp.o -c /home/forest-chan/CLionProjects/oop_game/Viewers/ConsoleFieldView.cpp
+CMakeFiles/oop_game.dir/Viewers/console/ConsoleFieldView.cpp.o: CMakeFiles/oop_game.dir/flags.make
+CMakeFiles/oop_game.dir/Viewers/console/ConsoleFieldView.cpp.o: ../Viewers/console/ConsoleFieldView.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/forest-chan/CLionProjects/oop_game/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/oop_game.dir/Viewers/console/ConsoleFieldView.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/oop_game.dir/Viewers/console/ConsoleFieldView.cpp.o -c /home/forest-chan/CLionProjects/oop_game/Viewers/console/ConsoleFieldView.cpp
 
-CMakeFiles/oop_game.dir/Viewers/ConsoleFieldView.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/oop_game.dir/Viewers/ConsoleFieldView.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/forest-chan/CLionProjects/oop_game/Viewers/ConsoleFieldView.cpp > CMakeFiles/oop_game.dir/Viewers/ConsoleFieldView.cpp.i
+CMakeFiles/oop_game.dir/Viewers/console/ConsoleFieldView.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/oop_game.dir/Viewers/console/ConsoleFieldView.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/forest-chan/CLionProjects/oop_game/Viewers/console/ConsoleFieldView.cpp > CMakeFiles/oop_game.dir/Viewers/console/ConsoleFieldView.cpp.i
 
-CMakeFiles/oop_game.dir/Viewers/ConsoleFieldView.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/oop_game.dir/Viewers/ConsoleFieldView.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/forest-chan/CLionProjects/oop_game/Viewers/ConsoleFieldView.cpp -o CMakeFiles/oop_game.dir/Viewers/ConsoleFieldView.cpp.s
+CMakeFiles/oop_game.dir/Viewers/console/ConsoleFieldView.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/oop_game.dir/Viewers/console/ConsoleFieldView.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/forest-chan/CLionProjects/oop_game/Viewers/console/ConsoleFieldView.cpp -o CMakeFiles/oop_game.dir/Viewers/console/ConsoleFieldView.cpp.s
+
+CMakeFiles/oop_game.dir/Viewers/console/EntityView.cpp.o: CMakeFiles/oop_game.dir/flags.make
+CMakeFiles/oop_game.dir/Viewers/console/EntityView.cpp.o: ../Viewers/console/EntityView.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/forest-chan/CLionProjects/oop_game/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/oop_game.dir/Viewers/console/EntityView.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/oop_game.dir/Viewers/console/EntityView.cpp.o -c /home/forest-chan/CLionProjects/oop_game/Viewers/console/EntityView.cpp
+
+CMakeFiles/oop_game.dir/Viewers/console/EntityView.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/oop_game.dir/Viewers/console/EntityView.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/forest-chan/CLionProjects/oop_game/Viewers/console/EntityView.cpp > CMakeFiles/oop_game.dir/Viewers/console/EntityView.cpp.i
+
+CMakeFiles/oop_game.dir/Viewers/console/EntityView.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/oop_game.dir/Viewers/console/EntityView.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/forest-chan/CLionProjects/oop_game/Viewers/console/EntityView.cpp -o CMakeFiles/oop_game.dir/Viewers/console/EntityView.cpp.s
 
 # Object files for target oop_game
 oop_game_OBJECTS = \
 "CMakeFiles/oop_game.dir/Field/Field.cpp.o" \
 "CMakeFiles/oop_game.dir/Field/FieldBuilder.cpp.o" \
-"CMakeFiles/oop_game.dir/main.cpp.o" \
-"CMakeFiles/oop_game.dir/Viewers/CellView.cpp.o" \
-"CMakeFiles/oop_game.dir/Viewers/ConsoleFieldView.cpp.o"
+"CMakeFiles/oop_game.dir/tests/lab2Tests.cpp.o" \
+"CMakeFiles/oop_game.dir/Viewers/console/CellView.cpp.o" \
+"CMakeFiles/oop_game.dir/Viewers/console/ConsoleFieldView.cpp.o" \
+"CMakeFiles/oop_game.dir/Viewers/console/EntityView.cpp.o"
 
 # External object files for target oop_game
 oop_game_EXTERNAL_OBJECTS =
 
 oop_game: CMakeFiles/oop_game.dir/Field/Field.cpp.o
 oop_game: CMakeFiles/oop_game.dir/Field/FieldBuilder.cpp.o
-oop_game: CMakeFiles/oop_game.dir/main.cpp.o
-oop_game: CMakeFiles/oop_game.dir/Viewers/CellView.cpp.o
-oop_game: CMakeFiles/oop_game.dir/Viewers/ConsoleFieldView.cpp.o
+oop_game: CMakeFiles/oop_game.dir/tests/lab2Tests.cpp.o
+oop_game: CMakeFiles/oop_game.dir/Viewers/console/CellView.cpp.o
+oop_game: CMakeFiles/oop_game.dir/Viewers/console/ConsoleFieldView.cpp.o
+oop_game: CMakeFiles/oop_game.dir/Viewers/console/EntityView.cpp.o
 oop_game: CMakeFiles/oop_game.dir/build.make
 oop_game: CMakeFiles/oop_game.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/forest-chan/CLionProjects/oop_game/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking CXX executable oop_game"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/forest-chan/CLionProjects/oop_game/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Linking CXX executable oop_game"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/oop_game.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

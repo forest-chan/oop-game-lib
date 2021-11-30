@@ -1,45 +1,56 @@
 #include "FieldBuilder.h"
 
-FieldBuilder::FieldBuilder(const unsigned int x, const unsigned int y, Type type): x(x), y(y), type(type){}
-
-Field FieldBuilder::build() {
-    switch(type){
+Field *FieldBuilder::build() {
+    Field *field = new Field(this->x, this->y);
+    switch(this->type){
         case DEFAULT:
-            return default_generation();
+            default_generation(field);
+            break;
         case BOX:
-            return box_generation();
-        default:
-            return default_generation();
+            box_generation(field);
+            break;
     }
+    return field;
 }
 
-Field FieldBuilder::default_generation(){
-    Field field(x, y);
-    field.cells[0][0] = new Entry();
-    field.cells[y-1][x-1] = new Exit();
+void FieldBuilder::default_generation(Field *field){
+    field->cells[0][0] = new Entry();
+    field->cells[y-1][x-1] = new Exit();
     for(int i = 0; i < y; i++){
         for(int j = 0; j < x; j++){
-            if(field.cells[i][j] == nullptr)
-                field.cells[i][j] = new Cell();
+            if(field->cells[i][j] == nullptr)
+                field->cells[i][j] = new Cell();
         }
     }
-    return Field(std::move(field));
+    notify(Log::debug("default game field was created"));
 }
 
-Field FieldBuilder::box_generation(){
-    if(x <= 4 || y <= 4)
+void FieldBuilder::box_generation(Field *field){
+    if(x <= 4 || y <= 4){
+        notify(Log::error("was given incorrect size of box game field"));
         throw std::invalid_argument("Size of field is too small");
+    }
 
-    Field field(x, y);
-    field.cells[1][1] = new Entry();
-    field.cells[y-2][x-2] = new Exit();
+    field->cells[1][1] = new Entry();
+    field->cells[y-2][x-2] = new Exit();
     for(int i = 0; i < y; i++){
         for(int j = 0; j < x; j++){
-            if(field.cells[i][j] == nullptr && (i >= 1 && j >= 1 && i < y-1 && j < x-1))
-                field.cells[i][j] = new Cell();
-            else if(field.cells[i][j] == nullptr)
-                field.cells[i][j] = new Wall();
+            if(field->cells[i][j] == nullptr && (i >= 1 && j >= 1 && i < y-1 && j < x-1))
+                field->cells[i][j] = new Cell();
+            else if(field->cells[i][j] == nullptr)
+                field->cells[i][j] = new Wall();
         }
     }
-    return Field(std::move(field));
+    notify(Log::debug("box game field was created"));
+}
+
+FieldBuilder &FieldBuilder::setType(FieldBuilder::Type type){
+    this->type = type;
+    return *this;
+}
+
+FieldBuilder &FieldBuilder::setSize(int x, int y){
+    this->x = x;
+    this->y = y;
+    return *this;
 }

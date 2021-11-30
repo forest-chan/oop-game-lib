@@ -6,9 +6,10 @@ set(CMAKE_DEPENDS_LANGUAGES
 set(CMAKE_DEPENDS_CHECK_CXX
   "/home/forest-chan/CLionProjects/oop_game/Field/Field.cpp" "/home/forest-chan/CLionProjects/oop_game/cmake-build-debug/CMakeFiles/oop_game.dir/Field/Field.cpp.o"
   "/home/forest-chan/CLionProjects/oop_game/Field/FieldBuilder.cpp" "/home/forest-chan/CLionProjects/oop_game/cmake-build-debug/CMakeFiles/oop_game.dir/Field/FieldBuilder.cpp.o"
-  "/home/forest-chan/CLionProjects/oop_game/Viewers/CellView.cpp" "/home/forest-chan/CLionProjects/oop_game/cmake-build-debug/CMakeFiles/oop_game.dir/Viewers/CellView.cpp.o"
-  "/home/forest-chan/CLionProjects/oop_game/Viewers/ConsoleFieldView.cpp" "/home/forest-chan/CLionProjects/oop_game/cmake-build-debug/CMakeFiles/oop_game.dir/Viewers/ConsoleFieldView.cpp.o"
-  "/home/forest-chan/CLionProjects/oop_game/main.cpp" "/home/forest-chan/CLionProjects/oop_game/cmake-build-debug/CMakeFiles/oop_game.dir/main.cpp.o"
+  "/home/forest-chan/CLionProjects/oop_game/Viewers/console/CellView.cpp" "/home/forest-chan/CLionProjects/oop_game/cmake-build-debug/CMakeFiles/oop_game.dir/Viewers/console/CellView.cpp.o"
+  "/home/forest-chan/CLionProjects/oop_game/Viewers/console/ConsoleFieldView.cpp" "/home/forest-chan/CLionProjects/oop_game/cmake-build-debug/CMakeFiles/oop_game.dir/Viewers/console/ConsoleFieldView.cpp.o"
+  "/home/forest-chan/CLionProjects/oop_game/Viewers/console/EntityView.cpp" "/home/forest-chan/CLionProjects/oop_game/cmake-build-debug/CMakeFiles/oop_game.dir/Viewers/console/EntityView.cpp.o"
+  "/home/forest-chan/CLionProjects/oop_game/tests/lab2Tests.cpp" "/home/forest-chan/CLionProjects/oop_game/cmake-build-debug/CMakeFiles/oop_game.dir/tests/lab2Tests.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

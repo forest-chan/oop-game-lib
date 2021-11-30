@@ -1,5 +1,6 @@
 #include "Field.h"
 
+
 Field::Field(unsigned int x, unsigned int y): x(x), y(y){
     cells = new BaseCell **[this->y];
     for(int i = 0; i < this->y; i++){
@@ -11,8 +12,11 @@ Field::Field(unsigned int x, unsigned int y): x(x), y(y){
 
 Field::~Field(){
     for(int i = 0; i < y; i++){
-        for(int j = 0; j < x; j++)
+        for(int j = 0; j < x; j++){
+            if(cells[i][j]->getEntity())
+                delete cells[i][j]->getEntity();
             delete cells[i][j];
+        }
         delete[] cells[i];
     }
     delete[] cells;
@@ -54,7 +58,6 @@ Field::Field(Field &&other){
     x = std::exchange(other.x, 0);
     y = std::exchange(other.y, 0);
     cells = std::exchange(other.cells, nullptr);
-    //std::move(other);
 }
 
 Field &Field::operator=(Field &&other){
@@ -69,9 +72,28 @@ Field &Field::operator=(Field &&other){
         x = std::exchange(other.x, 0);
         y = std::exchange(other.y, 0);
         cells = std::exchange(other.cells, nullptr);
-        //std::move(other);
     }
     return *this;
 }
 
 
+void Field::addNewLogger(std::shared_ptr<BaseLogger> logger){
+    for(int i = 0; i < this->y; i++){
+        for(int j = 0; j < this->x; j++){
+            this->cells[i][j]->addNewLogger(logger);
+        }
+    }
+}
+
+void Field::deleteLogger(std::shared_ptr<BaseLogger> logger){
+    for(int i = 0; i < this->y; i++){
+        for(int j = 0; j < this->x; j++){
+            this->cells[i][j]->deleteLogger(logger);
+        }
+    }
+}
+
+
+BaseCell *Field::getCell(int x, int y){
+    return this->cells[y][x];
+}

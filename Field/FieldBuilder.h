@@ -6,8 +6,9 @@
 #include "Cells/Entry.h"
 #include "Cells/Exit.h"
 #include "Cells/Wall.h"
+#include "../logging/BasePublisher.h"
 
-class FieldBuilder{
+class FieldBuilder: public BasePublisher{
 public:
     enum Type{
         DEFAULT,
@@ -18,16 +19,18 @@ protected:
     unsigned int x, y;
     Type type;
 
-    Field default_generation();
+    void default_generation(Field *f);
 
-    Field box_generation();
+    void box_generation(Field *f);
 
 public:
-    FieldBuilder() = delete;
+    FieldBuilder() = default;
 
-    FieldBuilder(unsigned int x, unsigned int y, Type type);
+    FieldBuilder &setType(Type type);
 
-    Field build();
+    FieldBuilder &setSize(int x, int y);
+
+    Field *build();
 
     ~FieldBuilder() = default;
 

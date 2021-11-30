@@ -5,20 +5,43 @@
 
 class Cell: public BaseCell{
 public:
-    virtual bool putEntity(std::weak_ptr<Entity> entity) override {
-        if (!interact(entity.lock())){
+    bool putEntity(Entity *entity) override {
+        if(!this->entity){
             this->entity = entity;
+            notify(Log::debug("an entity was moved to an empty cell"));
             return true;
         }
-        return false;
-    }
 
-    virtual bool interact(std::weak_ptr<Entity> entity) override {
-        if (this->entity.lock()) {
-            entity.lock()->interact(this->entity.lock());
-            this->entity.lock()->interact(entity.lock());
-            return true;
+        if(dynamic_cast<Item*>(entity)){// предмет не может ходить
+            notify(Log::warn("An item can't interact with other entities"));
+            return false;
         }
+
+        if(entity->interact(this->entity)){
+            Creature *c = dynamic_cast<Creature*>(entity);
+            Item *i = dynamic_cast<Item*>(this->entity);
+            if(c && c->getHp() <= 0){ // ходящий помер:(
+                notify(Log::debug("moving creature was destroyed"));
+                return false;
+            }
+
+            if(i){ // заюзали шмотку на клетке, на которую был совершен ход
+                this->entity = entity;
+                notify(Log::debug("an item on cell was used"));
+                return true;
+            }
+        }
+
+        if(this->entity->interact(entity)){
+            Creature *c = dynamic_cast<Creature*>(this->entity);
+            if(c && c->getHp() <= 0){
+                this->entity = entity;
+                notify(Log::debug("creature on cell was destroyed"));
+                return true;
+            }
+
+        }
+
         return false;
     }
 

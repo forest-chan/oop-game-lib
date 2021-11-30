@@ -196,86 +196,113 @@ Field/FieldBuilder.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/oop_game.dir/build.make CMakeFiles/oop_game.dir/Field/FieldBuilder.cpp.s
 .PHONY : Field/FieldBuilder.cpp.s
 
-Viewers/CellView.o: Viewers/CellView.cpp.o
+Viewers/console/CellView.o: Viewers/console/CellView.cpp.o
 
-.PHONY : Viewers/CellView.o
-
-# target to build an object file
-Viewers/CellView.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/oop_game.dir/build.make CMakeFiles/oop_game.dir/Viewers/CellView.cpp.o
-.PHONY : Viewers/CellView.cpp.o
-
-Viewers/CellView.i: Viewers/CellView.cpp.i
-
-.PHONY : Viewers/CellView.i
-
-# target to preprocess a source file
-Viewers/CellView.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/oop_game.dir/build.make CMakeFiles/oop_game.dir/Viewers/CellView.cpp.i
-.PHONY : Viewers/CellView.cpp.i
-
-Viewers/CellView.s: Viewers/CellView.cpp.s
-
-.PHONY : Viewers/CellView.s
-
-# target to generate assembly for a file
-Viewers/CellView.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/oop_game.dir/build.make CMakeFiles/oop_game.dir/Viewers/CellView.cpp.s
-.PHONY : Viewers/CellView.cpp.s
-
-Viewers/ConsoleFieldView.o: Viewers/ConsoleFieldView.cpp.o
-
-.PHONY : Viewers/ConsoleFieldView.o
+.PHONY : Viewers/console/CellView.o
 
 # target to build an object file
-Viewers/ConsoleFieldView.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/oop_game.dir/build.make CMakeFiles/oop_game.dir/Viewers/ConsoleFieldView.cpp.o
-.PHONY : Viewers/ConsoleFieldView.cpp.o
+Viewers/console/CellView.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/oop_game.dir/build.make CMakeFiles/oop_game.dir/Viewers/console/CellView.cpp.o
+.PHONY : Viewers/console/CellView.cpp.o
 
-Viewers/ConsoleFieldView.i: Viewers/ConsoleFieldView.cpp.i
+Viewers/console/CellView.i: Viewers/console/CellView.cpp.i
 
-.PHONY : Viewers/ConsoleFieldView.i
+.PHONY : Viewers/console/CellView.i
 
 # target to preprocess a source file
-Viewers/ConsoleFieldView.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/oop_game.dir/build.make CMakeFiles/oop_game.dir/Viewers/ConsoleFieldView.cpp.i
-.PHONY : Viewers/ConsoleFieldView.cpp.i
+Viewers/console/CellView.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/oop_game.dir/build.make CMakeFiles/oop_game.dir/Viewers/console/CellView.cpp.i
+.PHONY : Viewers/console/CellView.cpp.i
 
-Viewers/ConsoleFieldView.s: Viewers/ConsoleFieldView.cpp.s
+Viewers/console/CellView.s: Viewers/console/CellView.cpp.s
 
-.PHONY : Viewers/ConsoleFieldView.s
+.PHONY : Viewers/console/CellView.s
 
 # target to generate assembly for a file
-Viewers/ConsoleFieldView.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/oop_game.dir/build.make CMakeFiles/oop_game.dir/Viewers/ConsoleFieldView.cpp.s
-.PHONY : Viewers/ConsoleFieldView.cpp.s
+Viewers/console/CellView.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/oop_game.dir/build.make CMakeFiles/oop_game.dir/Viewers/console/CellView.cpp.s
+.PHONY : Viewers/console/CellView.cpp.s
 
-main.o: main.cpp.o
+Viewers/console/ConsoleFieldView.o: Viewers/console/ConsoleFieldView.cpp.o
 
-.PHONY : main.o
+.PHONY : Viewers/console/ConsoleFieldView.o
 
 # target to build an object file
-main.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/oop_game.dir/build.make CMakeFiles/oop_game.dir/main.cpp.o
-.PHONY : main.cpp.o
+Viewers/console/ConsoleFieldView.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/oop_game.dir/build.make CMakeFiles/oop_game.dir/Viewers/console/ConsoleFieldView.cpp.o
+.PHONY : Viewers/console/ConsoleFieldView.cpp.o
 
-main.i: main.cpp.i
+Viewers/console/ConsoleFieldView.i: Viewers/console/ConsoleFieldView.cpp.i
 
-.PHONY : main.i
+.PHONY : Viewers/console/ConsoleFieldView.i
 
 # target to preprocess a source file
-main.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/oop_game.dir/build.make CMakeFiles/oop_game.dir/main.cpp.i
-.PHONY : main.cpp.i
+Viewers/console/ConsoleFieldView.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/oop_game.dir/build.make CMakeFiles/oop_game.dir/Viewers/console/ConsoleFieldView.cpp.i
+.PHONY : Viewers/console/ConsoleFieldView.cpp.i
 
-main.s: main.cpp.s
+Viewers/console/ConsoleFieldView.s: Viewers/console/ConsoleFieldView.cpp.s
 
-.PHONY : main.s
+.PHONY : Viewers/console/ConsoleFieldView.s
 
 # target to generate assembly for a file
-main.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/oop_game.dir/build.make CMakeFiles/oop_game.dir/main.cpp.s
-.PHONY : main.cpp.s
+Viewers/console/ConsoleFieldView.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/oop_game.dir/build.make CMakeFiles/oop_game.dir/Viewers/console/ConsoleFieldView.cpp.s
+.PHONY : Viewers/console/ConsoleFieldView.cpp.s
+
+Viewers/console/EntityView.o: Viewers/console/EntityView.cpp.o
+
+.PHONY : Viewers/console/EntityView.o
+
+# target to build an object file
+Viewers/console/EntityView.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/oop_game.dir/build.make CMakeFiles/oop_game.dir/Viewers/console/EntityView.cpp.o
+.PHONY : Viewers/console/EntityView.cpp.o
+
+Viewers/console/EntityView.i: Viewers/console/EntityView.cpp.i
+
+.PHONY : Viewers/console/EntityView.i
+
+# target to preprocess a source file
+Viewers/console/EntityView.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/oop_game.dir/build.make CMakeFiles/oop_game.dir/Viewers/console/EntityView.cpp.i
+.PHONY : Viewers/console/EntityView.cpp.i
+
+Viewers/console/EntityView.s: Viewers/console/EntityView.cpp.s
+
+.PHONY : Viewers/console/EntityView.s
+
+# target to generate assembly for a file
+Viewers/console/EntityView.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/oop_game.dir/build.make CMakeFiles/oop_game.dir/Viewers/console/EntityView.cpp.s
+.PHONY : Viewers/console/EntityView.cpp.s
+
+tests/lab2Tests.o: tests/lab2Tests.cpp.o
+
+.PHONY : tests/lab2Tests.o
+
+# target to build an object file
+tests/lab2Tests.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/oop_game.dir/build.make CMakeFiles/oop_game.dir/tests/lab2Tests.cpp.o
+.PHONY : tests/lab2Tests.cpp.o
+
+tests/lab2Tests.i: tests/lab2Tests.cpp.i
+
+.PHONY : tests/lab2Tests.i
+
+# target to preprocess a source file
+tests/lab2Tests.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/oop_game.dir/build.make CMakeFiles/oop_game.dir/tests/lab2Tests.cpp.i
+.PHONY : tests/lab2Tests.cpp.i
+
+tests/lab2Tests.s: tests/lab2Tests.cpp.s
+
+.PHONY : tests/lab2Tests.s
+
+# target to generate assembly for a file
+tests/lab2Tests.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/oop_game.dir/build.make CMakeFiles/oop_game.dir/tests/lab2Tests.cpp.s
+.PHONY : tests/lab2Tests.cpp.s
 
 # Help Target
 help:
@@ -292,15 +319,18 @@ help:
 	@echo "... Field/FieldBuilder.o"
 	@echo "... Field/FieldBuilder.i"
 	@echo "... Field/FieldBuilder.s"
-	@echo "... Viewers/CellView.o"
-	@echo "... Viewers/CellView.i"
-	@echo "... Viewers/CellView.s"
-	@echo "... Viewers/ConsoleFieldView.o"
-	@echo "... Viewers/ConsoleFieldView.i"
-	@echo "... Viewers/ConsoleFieldView.s"
-	@echo "... main.o"
-	@echo "... main.i"
-	@echo "... main.s"
+	@echo "... Viewers/console/CellView.o"
+	@echo "... Viewers/console/CellView.i"
+	@echo "... Viewers/console/CellView.s"
+	@echo "... Viewers/console/ConsoleFieldView.o"
+	@echo "... Viewers/console/ConsoleFieldView.i"
+	@echo "... Viewers/console/ConsoleFieldView.s"
+	@echo "... Viewers/console/EntityView.o"
+	@echo "... Viewers/console/EntityView.i"
+	@echo "... Viewers/console/EntityView.s"
+	@echo "... tests/lab2Tests.o"
+	@echo "... tests/lab2Tests.i"
+	@echo "... tests/lab2Tests.s"
 .PHONY : help
 
 

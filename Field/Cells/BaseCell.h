@@ -2,21 +2,32 @@
 #define BASECELL_H
 
 #include "../../Entities/Entity.h"
+#include "../../Entities/Creatures/Creature.h"
+#include "../../Entities/Items/Item.h"
+#include "../../logging/BasePublisher.h"
 
-class BaseCell{
+class BaseCell: public BasePublisher{
 protected:
-    std::weak_ptr<Entity> entity;
+    Entity *entity = nullptr;
 
 public:
     BaseCell() = default;
 
     virtual BaseCell *create() = 0;
 
-    virtual bool putEntity(std::weak_ptr<Entity> entity) = 0;
+    virtual bool putEntity(Entity *entity) = 0;
 
-    virtual bool interact(std::weak_ptr<Entity> entity) = 0;
+    virtual bool moveTo(BaseCell *cell){
+        if(this != cell && entity != nullptr && putEntity(cell->getEntity())){
+            cell->entity = nullptr;
+            notify(Log::debug("the object located on the cell from which the move was made has been moved to a new cell"));
+            return true;
+        }
+        notify(Log::debug("the move to a new cell wasn't made"));
+        return false;
+    }
 
-    virtual std::weak_ptr<Entity> getEntity() {
+    virtual Entity *getEntity(){
         return entity;
     }
 

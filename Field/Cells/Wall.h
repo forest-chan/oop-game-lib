@@ -5,11 +5,7 @@
 
 class Wall: public BaseCell{
 public:
-    bool putEntity(std::weak_ptr<Entity> entity) override {
-        return false;
-    }
-
-    bool interact(std::weak_ptr<Entity> entity) override {
+    bool putEntity(Entity *entity) override{
         return false;
     }
 

@@ -12,7 +12,7 @@ public:
 
     FieldView(Field *field): field(field) {};
 
-    void set_field(Field *field){
+    void setField(Field *field){
         this->field = field;
     }
 
