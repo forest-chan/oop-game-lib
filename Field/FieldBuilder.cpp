@@ -9,6 +9,13 @@ Field *FieldBuilder::build() {
         case BOX:
             box_generation(field);
             break;
+        case RANDOM:
+            box_generation(field);
+            add_random_walls(field);
+            break;
+        default:
+            notify(Log::error("invalid type of field was given"));
+            throw std::invalid_argument("unknown type of field");
     }
     return field;
 }
@@ -42,6 +49,28 @@ void FieldBuilder::box_generation(Field *field){
         }
     }
     notify(Log::debug("box game field was created"));
+}
+
+void FieldBuilder::add_random_walls(Field *field){
+    int count_walls = static_cast<int>((x+y) / 3 + 1);
+
+    while(count_walls){
+        std::random_device rd;
+        std::mt19937 mersenne(rd());
+
+        int x_wall = mersenne() % (x-4) + 2,
+                y_wall = mersenne() % (y-4) + 2;
+
+        if(!(dynamic_cast<Wall*>(field->cells[y_wall][x_wall])) && !(dynamic_cast<Entry*>(field->cells[y_wall][x_wall]))
+                && !(dynamic_cast<Exit*>(field->cells[y_wall][x_wall]))){
+
+            delete field->cells[y_wall][x_wall];
+            field->cells[y_wall][x_wall] = new Wall();
+            count_walls--;
+
+        }
+    }
+
 }
 
 FieldBuilder &FieldBuilder::setType(FieldBuilder::Type type){

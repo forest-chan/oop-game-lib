@@ -100,9 +100,17 @@ CMakeFiles/oop_game.dir/tests/lab2Tests.cpp.o
  /home/forest-chan/CLionProjects/oop_game/Viewers/console/ConsoleFieldView.h
  /home/forest-chan/CLionProjects/oop_game/Viewers/console/ConsoleObjectView.h
  /home/forest-chan/CLionProjects/oop_game/Viewers/console/EntityView.h
+ /home/forest-chan/CLionProjects/oop_game/controllers/BaseController.h
+ /home/forest-chan/CLionProjects/oop_game/controllers/EnemyController.h
+ /home/forest-chan/CLionProjects/oop_game/game/Game.h
  /home/forest-chan/CLionProjects/oop_game/logging/BasePublisher.h
  /home/forest-chan/CLionProjects/oop_game/logging/Log.h
  /home/forest-chan/CLionProjects/oop_game/logging/loggers/BaseLogger.h
  /home/forest-chan/CLionProjects/oop_game/logging/loggers/ConsoleLogger.h
  /home/forest-chan/CLionProjects/oop_game/logging/loggers/FileLogger.h
+ /home/forest-chan/CLionProjects/oop_game/rules/EnemyCountTemplate.h
+ /home/forest-chan/CLionProjects/oop_game/rules/FieldCharacteristicsTemplate.h
+ /home/forest-chan/CLionProjects/oop_game/rules/ItemsCountTemplate.h
+ /home/forest-chan/CLionProjects/oop_game/rules/PlayerCharacteristicsTemplate.h
+ /home/forest-chan/CLionProjects/oop_game/rules/Rules.h
  /home/forest-chan/CLionProjects/oop_game/tests/lab2Tests.cpp

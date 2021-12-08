@@ -1,0 +1,3 @@
+/home/forest-chan/CLionProjects/oop_game/CMakeFiles/oop_game.dir
+/home/forest-chan/CLionProjects/oop_game/CMakeFiles/edit_cache.dir
+/home/forest-chan/CLionProjects/oop_game/CMakeFiles/rebuild_cache.dir

@@ -18,7 +18,7 @@ public:
     virtual bool putEntity(Entity *entity) = 0;
 
     virtual bool moveTo(BaseCell *cell){
-        if(this != cell && entity != nullptr && putEntity(cell->getEntity())){
+        if(this != cell && putEntity(cell->getEntity())){ //entity != nullptr
             cell->entity = nullptr;
             notify(Log::debug("the object located on the cell from which the move was made has been moved to a new cell"));
             return true;

@@ -13,7 +13,7 @@ public:
         }
 
         if(dynamic_cast<Item*>(entity)){// предмет не может ходить
-            notify(Log::warn("An item can't interact with other entities"));
+            notify(Log::warn("An item can't interact with other Entities"));
             return false;
         }
 
