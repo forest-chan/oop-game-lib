@@ -13,7 +13,7 @@ public:
         }
 
         if(dynamic_cast<Item*>(entity)){// предмет не может ходить
-            notify(Log::warn("An item can't interact with other entities"));
+            notify(Log::warn("An item can't interact with other Entities"));
             return false;
         }
 
@@ -21,6 +21,7 @@ public:
             Creature *c = dynamic_cast<Creature*>(entity);
             Item *i = dynamic_cast<Item*>(this->entity);
             if(c && c->getHp() <= 0){ // ходящий помер:(
+                entity = nullptr;
                 notify(Log::debug("moving creature was destroyed"));
                 return false;
             }
