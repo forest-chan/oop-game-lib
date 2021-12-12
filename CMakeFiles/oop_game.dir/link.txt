@@ -1,1 +1,0 @@
-/usr/bin/c++ -lncurses CMakeFiles/oop_game.dir/Field/Field.cpp.o CMakeFiles/oop_game.dir/Field/FieldBuilder.cpp.o CMakeFiles/oop_game.dir/tests/lab2Tests.cpp.o CMakeFiles/oop_game.dir/Viewers/console/CellView.cpp.o CMakeFiles/oop_game.dir/Viewers/console/ConsoleFieldView.cpp.o CMakeFiles/oop_game.dir/Viewers/console/EntityView.cpp.o -o oop_game 

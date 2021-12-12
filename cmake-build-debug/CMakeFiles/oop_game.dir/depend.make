@@ -99,18 +99,10 @@ CMakeFiles/oop_game.dir/tests/lab2Tests.cpp.o: ../Viewers/console/CellView.h
 CMakeFiles/oop_game.dir/tests/lab2Tests.cpp.o: ../Viewers/console/ConsoleFieldView.h
 CMakeFiles/oop_game.dir/tests/lab2Tests.cpp.o: ../Viewers/console/ConsoleObjectView.h
 CMakeFiles/oop_game.dir/tests/lab2Tests.cpp.o: ../Viewers/console/EntityView.h
-CMakeFiles/oop_game.dir/tests/lab2Tests.cpp.o: ../controllers/BaseController.h
-CMakeFiles/oop_game.dir/tests/lab2Tests.cpp.o: ../controllers/EnemyController.h
-CMakeFiles/oop_game.dir/tests/lab2Tests.cpp.o: ../game/Game.h
 CMakeFiles/oop_game.dir/tests/lab2Tests.cpp.o: ../logging/BasePublisher.h
 CMakeFiles/oop_game.dir/tests/lab2Tests.cpp.o: ../logging/Log.h
 CMakeFiles/oop_game.dir/tests/lab2Tests.cpp.o: ../logging/loggers/BaseLogger.h
 CMakeFiles/oop_game.dir/tests/lab2Tests.cpp.o: ../logging/loggers/ConsoleLogger.h
 CMakeFiles/oop_game.dir/tests/lab2Tests.cpp.o: ../logging/loggers/FileLogger.h
-CMakeFiles/oop_game.dir/tests/lab2Tests.cpp.o: ../rules/EnemyCountTemplate.h
-CMakeFiles/oop_game.dir/tests/lab2Tests.cpp.o: ../rules/FieldCharacteristicsTemplate.h
-CMakeFiles/oop_game.dir/tests/lab2Tests.cpp.o: ../rules/ItemsCountTemplate.h
-CMakeFiles/oop_game.dir/tests/lab2Tests.cpp.o: ../rules/PlayerCharacteristicsTemplate.h
-CMakeFiles/oop_game.dir/tests/lab2Tests.cpp.o: ../rules/Rules.h
 CMakeFiles/oop_game.dir/tests/lab2Tests.cpp.o: ../tests/lab2Tests.cpp
 

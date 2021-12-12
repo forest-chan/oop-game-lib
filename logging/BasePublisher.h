@@ -7,7 +7,7 @@
 #include <iostream>
 
 class BasePublisher {
-protected:
+private:
     std::list<std::shared_ptr<BaseLogger>> loggers;
 
 protected:
