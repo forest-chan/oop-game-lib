@@ -21,6 +21,8 @@
 #include "../logging/BasePublisher.h"
 #include "../rules/Rules.h"
 #include "../controllers/EnemyController.h"
+#include "../controllers/PlayerController.h"
+
 
 template<class Rules>
 class Game: public BasePublisher{
@@ -30,6 +32,9 @@ private:
     std::vector<Entity*> enemies;
     std::vector<Entity*> items;
     std::vector<EnemyController*> controllers;
+    BaseController *pc;
+    ConsoleFieldView fv;
+
 
     void initField(){
         field = FieldBuilder().setSize(rules.getFieldCharacteristics().getX(),
@@ -142,12 +147,16 @@ private:
             player->addNewLogger(logger);
         }
 
-        if(rules.getFieldCharacteristics().getFieldType() == FieldBuilder::DEFAULT)
+        if(rules.getFieldCharacteristics().getFieldType() == FieldBuilder::DEFAULT){
             field->getCell(0, 0)->putEntity(player);
+            pc = new PlayerController(player, field, 0, 0);
+        }
 
         else if(rules.getFieldCharacteristics().getFieldType() == FieldBuilder::BOX
-                                                            || rules.getFieldCharacteristics().getFieldType() == FieldBuilder::RANDOM)
+                                                            || rules.getFieldCharacteristics().getFieldType() == FieldBuilder::RANDOM){
             field->getCell(1, 1)->putEntity(player);
+            pc = new PlayerController(player, field, 1, 1);
+        }
 
     }
 
@@ -160,20 +169,21 @@ private:
 
     void init(){
         initField();
-        ConsoleFieldView fv(field);
-        std::cout << fv << std::endl;
-
         putPlayer();
-        std::cout << fv << std::endl;
-
         putEnemies();
-        std::cout << fv << std::endl;
-
         putItems();
-        std::cout << fv << std::endl;
+    }
 
-        for(auto &controller: controllers)
-            controller->move();
+    bool getWin(){
+        if(dynamic_cast<Exit*>(field->getCell(pc->getX(), pc->getY())))
+            return false;
+        return true;
+    }
+
+
+    void display(){
+        if(!fv.getField())
+            fv.setField(field);
 
         std::cout << fv << std::endl;
     }
@@ -184,11 +194,18 @@ public:
         init();
     }
 
-    const Field &getField(){
-        return *field;
+    void start(){
+        display();
+        do{
+            if(pc->move()){
+                for(auto controller: controllers)
+                    controller->move();
+                display();
+            }
+        }while(getWin());
     }
 
-    ~Game() = default; //очистить все объекты фабрик, список контроллеров?
+    ~Game() = default;
 
 };
 

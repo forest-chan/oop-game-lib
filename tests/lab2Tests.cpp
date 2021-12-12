@@ -31,17 +31,17 @@
 int main(){
     Rules<EnemyCountTemplate<int>, PlayerCharacteristicsTemplate<int>,
             FieldCharacteristicsTemplate<int>, ItemsCountTemplate<int>> rules(
-                    EnemyCountTemplate<int> (1, 1, 1), PlayerCharacteristicsTemplate<int> (100, 100, 100),
-                    FieldCharacteristicsTemplate<int> (7, 7, FieldBuilder::RANDOM), ItemsCountTemplate<int> (1, 1, 1)
+                    EnemyCountTemplate<int> (10, 0, 0), PlayerCharacteristicsTemplate<int> (100, 100, 100),
+                    FieldCharacteristicsTemplate<int> (7, 7, FieldBuilder::RANDOM), ItemsCountTemplate<int> (0, 0, 0)
                     );
 
     Game <Rules<EnemyCountTemplate<int>, PlayerCharacteristicsTemplate<int>,
             FieldCharacteristicsTemplate<int>, ItemsCountTemplate<int>>> game(
-                    rules,std::make_shared<ConsoleLogger>(),std::make_shared<FileLogger>()
+                    rules, nullptr, std::make_shared<FileLogger>()
                             );
 
 
-
+    game.start();
 
 
 

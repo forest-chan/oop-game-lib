@@ -6,13 +6,13 @@ void ConsoleFieldView::show(std::ostream &os) {
             for (int i = 0; i < field->y; ++i) {
                 for (int j = 0; j < field->x; ++j) {
                     if (field->getCell(j, i)->getEntity()){
-                        std::cout << EntityView::getChar(*field->getCell(j, i)->getEntity()) << " ";
+                        os << EntityView::getChar(*field->getCell(j, i)->getEntity()) << " ";
                     }
                     else{
-                        std::cout << CellView::getChar(*field->getCell(j, i)) << " ";
+                        os << CellView::getChar(*field->getCell(j, i)) << " ";
                     }
                 }
-                std::cout << '\n';
+                os << '\n';
             }
         }
     }
@@ -28,3 +28,4 @@ void ConsoleFieldView::showInfo(std::ostream &os) {
     if (!field)
         os << "size:" << field->x << "x" << field->y << " cells: " << field->cells << '\n';
 }
+

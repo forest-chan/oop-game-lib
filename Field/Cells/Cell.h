@@ -21,6 +21,7 @@ public:
             Creature *c = dynamic_cast<Creature*>(entity);
             Item *i = dynamic_cast<Item*>(this->entity);
             if(c && c->getHp() <= 0){ // ходящий помер:(
+                entity = nullptr;
                 notify(Log::debug("moving creature was destroyed"));
                 return false;
             }
