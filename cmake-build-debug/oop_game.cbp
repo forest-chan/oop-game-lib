@@ -160,15 +160,6 @@
 		<Unit filename="/home/forest-chan/CLionProjects/oop_game/Viewers/console/EntityView.h">
 			<Option target="oop_game"/>
 		</Unit>
-		<Unit filename="/home/forest-chan/CLionProjects/oop_game/controllers/BaseController.h">
-			<Option target="oop_game"/>
-		</Unit>
-		<Unit filename="/home/forest-chan/CLionProjects/oop_game/controllers/EnemyController.h">
-			<Option target="oop_game"/>
-		</Unit>
-		<Unit filename="/home/forest-chan/CLionProjects/oop_game/game/Game.h">
-			<Option target="oop_game"/>
-		</Unit>
 		<Unit filename="/home/forest-chan/CLionProjects/oop_game/logging/BasePublisher.h">
 			<Option target="oop_game"/>
 		</Unit>
@@ -182,21 +173,6 @@
 			<Option target="oop_game"/>
 		</Unit>
 		<Unit filename="/home/forest-chan/CLionProjects/oop_game/logging/loggers/FileLogger.h">
-			<Option target="oop_game"/>
-		</Unit>
-		<Unit filename="/home/forest-chan/CLionProjects/oop_game/rules/EnemyCountTemplate.h">
-			<Option target="oop_game"/>
-		</Unit>
-		<Unit filename="/home/forest-chan/CLionProjects/oop_game/rules/FieldCharacteristicsTemplate.h">
-			<Option target="oop_game"/>
-		</Unit>
-		<Unit filename="/home/forest-chan/CLionProjects/oop_game/rules/ItemsCountTemplate.h">
-			<Option target="oop_game"/>
-		</Unit>
-		<Unit filename="/home/forest-chan/CLionProjects/oop_game/rules/PlayerCharacteristicsTemplate.h">
-			<Option target="oop_game"/>
-		</Unit>
-		<Unit filename="/home/forest-chan/CLionProjects/oop_game/rules/Rules.h">
 			<Option target="oop_game"/>
 		</Unit>
 		<Unit filename="/home/forest-chan/CLionProjects/oop_game/tests/lab2Tests.cpp">

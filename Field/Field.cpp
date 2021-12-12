@@ -97,11 +97,3 @@ void Field::deleteLogger(std::shared_ptr<BaseLogger> logger){
 BaseCell *Field::getCell(int x, int y){
     return this->cells[y][x];
 }
-
-int Field::getX(){
-    return x;
-}
-
-int Field::getY(){
-    return y;
-}

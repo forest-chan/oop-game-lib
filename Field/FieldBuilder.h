@@ -1,7 +1,6 @@
 #ifndef FIELDBUILDER_H
 #define FIELDBUILDER_H
 
-#include <random>
 #include "Field.h"
 #include "Cells/Cell.h"
 #include "Cells/Entry.h"
@@ -13,8 +12,7 @@ class FieldBuilder: public BasePublisher{
 public:
     enum Type{
         DEFAULT,
-        BOX,
-        RANDOM
+        BOX
     };
 
 protected:
@@ -24,8 +22,6 @@ protected:
     void default_generation(Field *f);
 
     void box_generation(Field *f);
-
-    void add_random_walls(Field *f);
 
 public:
     FieldBuilder() = default;

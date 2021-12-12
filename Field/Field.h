@@ -34,10 +34,6 @@ public:
 
     BaseCell *getCell(int x, int y);
 
-    int getX();
-
-    int getY();
-
     void addNewLogger(std::shared_ptr<BaseLogger> logger) override;
 
     void deleteLogger(std::shared_ptr<BaseLogger> logger) override;

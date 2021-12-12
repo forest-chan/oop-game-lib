@@ -2,7 +2,7 @@
 
 CellView::CellView() : ConsoleObjectView<BaseCell>(
         {
-                {typeid(Cell).hash_code(),     '.'},
+                {typeid(Cell).hash_code(),     'O'},
                 {typeid(Wall).hash_code(),     '#'},
                 {typeid(Entry).hash_code(), '@'},
                 {typeid(Exit).hash_code(),     '$'}

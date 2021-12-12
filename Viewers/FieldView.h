@@ -16,10 +16,6 @@ public:
         this->field = field;
     }
 
-    Field *getField(){
-        return this->field;
-    }
-
     virtual ~FieldView() = default;
 
 };
