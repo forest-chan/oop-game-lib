@@ -25,7 +25,7 @@ std::ostream &operator<<(std::ostream &os, ConsoleFieldView &fv) {
 }
 
 void ConsoleFieldView::showInfo(std::ostream &os) {
-    if (!field)
+    if (field)
         os << "size:" << field->x << "x" << field->y << " cells: " << field->cells << '\n';
 }
 

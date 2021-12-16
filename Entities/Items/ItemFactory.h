@@ -7,6 +7,8 @@
 class ItemFactory {
 public:
     virtual Item *create(int value) = 0;
+
+    virtual ~ItemFactory() = default;
 };
 
 class HealFactory: public ItemFactory {

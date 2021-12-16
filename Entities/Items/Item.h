@@ -33,6 +33,10 @@ public:
 
     Item(int value): value(value){}
 
+    int getValue(){
+        return value;
+    }
+
 };
 
 

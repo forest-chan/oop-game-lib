@@ -8,6 +8,11 @@
 #include "../logging/BasePublisher.h"
 #include "../logging/loggers/BaseLogger.h"
 
+#define MAX_FIELD_HEIGHT 50
+#define MAX_FIELD_WIDTH 50
+#define MIN_FIELD_HEIGHT 4
+#define MIN_FIELD_WIDTH 4
+
 class Field: public BasePublisher {
     friend class FieldBuilder;
 
@@ -41,8 +46,6 @@ public:
     void addNewLogger(std::shared_ptr<BaseLogger> logger) override;
 
     void deleteLogger(std::shared_ptr<BaseLogger> logger) override;
-
-
 
     virtual ~Field();
 };

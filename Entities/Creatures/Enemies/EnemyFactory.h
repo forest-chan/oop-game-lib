@@ -7,6 +7,8 @@
 class EnemyFactory {
 public:
     virtual Creature *create() = 0;
+
+    virtual ~EnemyFactory() = default;
 };
 
 class LightEnemyFactory: public EnemyFactory {

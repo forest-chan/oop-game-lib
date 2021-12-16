@@ -8,6 +8,9 @@
 #include "Cells/Exit.h"
 #include "Cells/Wall.h"
 #include "../logging/BasePublisher.h"
+#include "../saving/CellInfo.h"
+#include "../saving/FieldInfo.h"
+
 
 class FieldBuilder: public BasePublisher{
 public:
@@ -35,6 +38,8 @@ public:
     FieldBuilder &setSize(int x, int y);
 
     Field *build();
+
+    Field *createFromInfo(CellInfo ***cellsInfo, FieldInfo *fieldInfo);
 
     ~FieldBuilder() = default;
 

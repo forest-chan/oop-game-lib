@@ -11,6 +11,7 @@
 #include "../Field/Cells/Wall.h"
 #include "../Field/Cells/Entry.h"
 #include "../Field/Cells/Exit.h"
+#include "../saving/Serialization.h"
 
 class BaseController{
 protected:
@@ -61,7 +62,9 @@ protected:
                     {"KEY_UP", keyChars[0]},
                     {"KEY_DOWN", keyChars[1]},
                     {"KEY_RIGHT", keyChars[2]},
-                    {"KEY_LEFT", keyChars[3]}
+                    {"KEY_LEFT", keyChars[3]},
+                    {"KEY_SAVE", keyChars[4]},
+                    {"KEY_LOAD", keyChars[5]}
             };
 
             f.close();
@@ -89,52 +92,56 @@ protected:
                 {"KEY_UP", 'w'},
                 {"KEY_DOWN", 's'},
                 {"KEY_RIGHT", 'd'},
-                {"KEY_LEFT", 'a'}
+                {"KEY_LEFT", 'a'},
+                {"KEY_SAVE", 'p'},
+                {"KEY_LOAD", 'l'}
         };
         keyChars.push_back('w');
         keyChars.push_back('s');
         keyChars.push_back('d');
         keyChars.push_back('a');
+        keyChars.push_back('p');
+        keyChars.push_back('l');
         writeKeys();
     }
 
 public:
     BaseController(Entity *object, Field *field, unsigned startPositionX, unsigned startPositionY):
                                             object(object), field(field), x(startPositionX), y(startPositionY){
-        keysCount = 4;
+        keysCount = 6;
         if(!readKeys())
             setDefaultKeys();
     }
 
-    virtual bool move(){
+    virtual std::string move(){
         if(checkForPlayerMovement())
-            return false;
+            return "fail";
 
         if(isAvailableToMove(x, y-1)){
             AbsMove(x, y-1);
             y -= 1;
-            return true;
+            return "success";
         }
 
         else if(isAvailableToMove(x+1, y)){
             AbsMove(x+1, y);
             x += 1;
-            return true;
+            return "success";
         }
 
         else if(isAvailableToMove(x, y+1)){
             AbsMove(x, y+1);
             y += 1;
-            return true;
+            return "success";
         }
 
         else if(isAvailableToMove(x-1, y)){
             AbsMove(x-1, y);
             x -= 1;
-            return true;
+            return "success";
         }
 
-        return false;
+        return "fail";
     }
 
     int getX(){
@@ -143,6 +150,10 @@ public:
 
     int getY(){
         return y;
+    }
+
+    void setField(Field *f){
+        this->field = f;
     }
 };
 

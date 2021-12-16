@@ -4,13 +4,17 @@
 #include "../../Entities/Entity.h"
 #include "../../Entities/Creatures/Creature.h"
 #include "../../Entities/Items/Item.h"
+#include "../../Entities/Creatures/Player.h"
+#include "../../Entities/Creatures/Enemies/Enemy.h"
 #include "../../logging/BasePublisher.h"
+
+
 
 class BaseCell: public BasePublisher{
 protected:
     Entity *entity = nullptr;
-
 public:
+
     BaseCell() = default;
 
     virtual BaseCell *create() = 0;
@@ -31,7 +35,44 @@ public:
         return entity;
     }
 
+    virtual bool isPlayer(){
+        if(dynamic_cast<Player*>(this->entity)){
+            return true;
+        }
+        return false;
+    }
+
+    virtual bool isEnemy(){
+        if(dynamic_cast<Enemy*>(this->entity)){
+            return true;
+        }
+        return false;
+    }
+
+    virtual bool isHealItem(){
+        if(dynamic_cast<HealItem*>(this->entity)){
+            return true;
+        }
+        return false;
+    }
+
+    virtual bool isDmgItem(){
+        if(dynamic_cast<DmgItem*>(this->entity)){
+            return true;
+        }
+        return false;
+    }
+
+    virtual bool isArmorItem(){
+        if(dynamic_cast<ArmorItem*>(this->entity)){
+            return true;
+        }
+        return false;
+    }
+
+
     virtual ~BaseCell() = default;
+
 };
 
 #endif //BASECELL_H

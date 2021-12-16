@@ -2,6 +2,7 @@
 #define PLAYERCONTROLLER_H
 
 #include <iostream>
+#include <utility>
 #include "BaseController.h"
 
 
@@ -21,7 +22,7 @@ public:
     PlayerController(Entity *object, Field *field, unsigned startPositionX, unsigned startPositionY):
         BaseController(object, field, startPositionX, startPositionY){}
 
-    bool move() override{
+    std::string move() override{
         int c = getchar();
 
         if(c != '\n'){
@@ -30,69 +31,43 @@ public:
                 if(isAvailableToMove(x, y-1)){
                     AbsMove(x, y-1);
                     y -= 1;
-                    return true;
+                    return "success";
                 }
             }
             else if(c == keys["KEY_DOWN"]){
                 if(isAvailableToMove(x, y+1)){
                     AbsMove(x, y+1);
                     y += 1;
-                    return true;
+                    return "success";
                 }
             }
             else if(c == keys["KEY_RIGHT"]){
                 if(isAvailableToMove(x+1, y)){
                     AbsMove(x+1, y);
                     x += 1;
-                    return true;
+                    return "success";
                 }
             }
             else if(c == keys["KEY_LEFT"]){
                 if(isAvailableToMove(x-1, y)){
                     AbsMove(x-1, y);
                     x -= 1;
-                    return true;
+                    return "success";
                 }
             }
-            else{
-                return false;
+            else if(c == keys["KEY_SAVE"]){
+                return "save";
             }
+            else if(c == keys["KEY_LOAD"]){
 
-            /*switch(c){
-                case UP:
-                    if(isAvailableToMove(x, y-1)){
-                        AbsMove(x, y-1);
-                        y -= 1;
-                        return true;
-                    }
-                    break;
-                case RIGHT:
-                    if(isAvailableToMove(x+1, y)){
-                        AbsMove(x+1, y);
-                        x += 1;
-                        return true;
-                    }
-                    break;
-                case DOWN:
-                    if(isAvailableToMove(x, y+1)){
-                        AbsMove(x, y+1);
-                        y += 1;
-                        return true;
-                    }
-                    break;
-                case LEFT:
-                    if(isAvailableToMove(x-1, y)){
-                        AbsMove(x-1, y);
-                        x -= 1;
-                        return true;
-                    }
-                    break;
-                default:
-                    return false;
-            }*/
+                return "load";
+
+            }
+            else{
+                return "fail";
+            }
         }
-
-        return false;
+        return "fail";
     }
 };
 

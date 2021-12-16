@@ -83,3 +83,35 @@ FieldBuilder &FieldBuilder::setSize(int x, int y){
     this->y = y;
     return *this;
 }
+
+Field *FieldBuilder::createFromInfo(CellInfo ***cellsInfo, FieldInfo *fieldInfo){
+    Field *field = new Field(fieldInfo->x, fieldInfo->y);
+
+    for(int i = 0; i < field->y; i++){
+        for(int j = 0; j < field->x; j++){
+            if(field->cells[i][j] == nullptr){
+                if(cellsInfo[i][j]->isWall)
+                    field->cells[i][j] = new Wall();
+                if(cellsInfo[i][j]->isEntry)
+                    field->cells[i][j] = new Entry();
+                if(cellsInfo[i][j]->isExit)
+                    field->cells[i][j] = new Exit();
+                if(cellsInfo[i][j]->isWall && cellsInfo[i][j]->isEntry && cellsInfo[i][j]->isExit)
+                    field->cells[i][j] = new Cell();
+
+
+                if(cellsInfo[i][j]->isPlayer)
+                    field->cells[i][j]->putEntity(new Player(cellsInfo[i][j]->hp, cellsInfo[i][j]->dmg, cellsInfo[i][j]->armor));
+                else if(cellsInfo[i][j]->isEnemy)
+                    field->cells[i][j]->putEntity(new Enemy(cellsInfo[i][j]->hp, cellsInfo[i][j]->dmg, cellsInfo[i][j]->armor));
+                else if(cellsInfo[i][j]->isHealItem)
+                    field->cells[i][j]->putEntity(new HealItem(cellsInfo[i][j]->value));
+                else if(cellsInfo[i][j]->isDmgItem)
+                    field->cells[i][j]->putEntity(new DmgItem(cellsInfo[i][j]->value));
+                else if(cellsInfo[i][j]->isArmorItem)
+                    field->cells[i][j]->putEntity(new ArmorItem(cellsInfo[i][j]->value));
+            }
+        }
+    }
+    return field;
+}
